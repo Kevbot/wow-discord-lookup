@@ -1,0 +1,203 @@
+{
+    "expansions": 
+    [
+        {
+            "expansion": 
+            {
+                "key": 0,
+                "name": "Classic",
+                "aliases": 
+                [
+                    {
+                        "alias":
+                        {
+                            "name": "classic"
+                        }
+                    },
+                    {
+                        "alias":
+                        {
+                            "name": "vanilla"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "expansion": 
+            {
+                "key": 1,
+                "name": "The Burning Crusade",
+                "aliases": 
+                [
+                    {
+                        "alias":
+                        {
+                            "name": "tbc"
+                        }
+                    },
+                    {
+                        "alias":
+                        {
+                            "name": "bc"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "expansion": 
+            {
+                "key": 2,
+                "name": "Wrath of the Lich King",
+                "aliases": 
+                [
+                    {
+                        "alias":
+                        {
+                            "name": "wrath"
+                        }
+                    },
+                    {
+                        "alias":
+                        {
+                            "name": "wotlk"
+                        }
+                    },
+                    {
+                        "alias":
+                        {
+                            "name": "lich king"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "expansion": 
+            {
+                "key": 3,
+                "name": "Cataclysm",
+                "aliases": 
+                [
+                    {
+                        "alias":
+                        {
+                            "name": "cata"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "expansion": 
+            {
+                "key": 4,
+                "name": "Mists of Pandaria",
+                "aliases": 
+                [
+                    {
+                        "alias":
+                        {
+                            "name": "mop"
+                        }
+                    },
+                    {
+                        "alias":
+                        {
+                            "name": "mists"
+                        }
+                    },
+                    {
+                        "alias":
+                        {
+                            "name": "pandaria"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "expansion": 
+            {
+                "key": 5,
+                "name": "Warlords of Draenor",
+                "aliases": 
+                [
+                    {
+                        "alias":
+                        {
+                            "name": "wod"
+                        }
+                    },
+                    {
+                        "alias":
+                        {
+                            "name": "warlords"
+                        }
+                    },
+                    {
+                        "alias":
+                        {
+                            "name": "draenor"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "expansion": 
+            {
+                "key": 6,
+                "name": "Legion",
+                "aliases": 
+                [
+                    {
+                        "alias":
+                        {
+                            "name": "legion"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "expansion": 
+            {
+                "key": 7,
+                "name": "Battle for Azeroth",
+                "aliases": 
+                [
+                    {
+                        "alias":
+                        {
+                            "name": "bfa"
+                        }
+                    },
+                    {
+                        "alias":
+                        {
+                            "name": "battle"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "expansion": 
+            {
+                "key": 8,
+                "name": "Shadowlands",
+                "aliases": 
+                [
+                    {
+                        "alias":
+                        {
+                            "name": "sl"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

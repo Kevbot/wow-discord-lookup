@@ -1,0 +1,50 @@
+{
+    "regions": 
+    [
+        {
+            "region": 
+            {
+                "abbreviation": "us",
+                "name": "United States",
+                "namespace" : "profile-us",
+                "locale" : "en_US"
+            }
+        },
+        {
+            "region": 
+            {
+                "abbreviation": "eu",
+                "name": "Europe",
+                "namespace" : "profile-eu",
+                "locale" : "en_GB"
+            }
+        },
+        {
+            "region": 
+            {
+                "abbreviation": "kr",
+                "name": "Korea",
+                "namespace" : "profile-kr",
+                "locale" : "ko_KR"
+            }
+        },
+        {
+            "region": 
+            {
+                "abbreviation": "tw",
+                "name": "Taiwan",
+                "namespace" : "profile-tw",
+                "locale" : "zh_TW"
+            }
+        },
+        {
+            "region": 
+            {
+                "abbreviation": "cn",
+                "name": "China",
+                "namespace" : "profile-cn",
+                "locale" : "zh_CN"
+            }
+        }
+    ]
+}
