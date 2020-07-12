@@ -45,7 +45,6 @@ async def on_command_error(ctx, error):
 #@client.command(aliases=expansion_pack_names)
 @client.command(name=SEARCH_COMM_STR)
 async def event_loop(ctx):
-
     if ctx.author == client.user:
         return
 

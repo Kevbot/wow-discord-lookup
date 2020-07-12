@@ -9,7 +9,6 @@ import json
 import os
 
 def parse_user_input(message):
-
     INPUT_EXP_PACK_INDEX = 1
     INPUT_CHAR_NAME_INDEX = 2
     INPUT_REGION_INDEX = 3
@@ -40,7 +39,6 @@ def parse_user_input(message):
 
 
 def get_region_info(region):
-
     if os.path.isfile('./json/regions.json'):
         regions_file_path = './json/regions.json'
     elif os.path.isfile('./src/json/regions.json'):
@@ -67,7 +65,6 @@ def get_region_info(region):
 
 
 def get_expansion_info(expansion):
-
     if os.path.isfile('./json/expansions.json'):
         expansions_file_path = './json/expansions.json'
     elif os.path.isfile('./src/json/expansions.json'):
@@ -91,7 +88,6 @@ def get_expansion_info(expansion):
 
 
 def format_expansion_info(response, index):
-    
     length = len(response.json()["expansions"])
 
     print(f"DEBUG: Expansion index is {index}, returned length of JSON query is {length}")
@@ -101,20 +97,19 @@ def format_expansion_info(response, index):
     else:
         expansion_name = response.json()["expansions"][index]["expansion"]["name"]
         raids = response.json()["expansions"][index]["instances"]
-        output_data = expansion_name + ":\n" + ("=" * len(expansion_name) + "\n")
+        output_data = ("=" * 30 + "\n") + "Raid progress for " + expansion_name + ":\n" + ("=" * 30 + "\n")
         
         for i in range(0, len(raids)):
-            output_data += (" - " + raids[i]["instance"]["name"] + "\n")
+            output_data += (" " + raids[i]["instance"]["name"] + ":\n")
             for j in range(0, len(raids[i]["modes"])):
                 completed_count = raids[i]["modes"][j]["progress"]["completed_count"]
                 total_count = raids[i]["modes"][j]["progress"]["total_count"]
                 difficulty = raids[i]["modes"][j]["difficulty"]["name"]
-                output_data += (f"   - {completed_count}/{total_count} {difficulty}" + "\n")
-
+                output_data += (f"\t{completed_count}/{total_count} {difficulty}\n")
+            output_data += "=" * 30 + "\n"
     return output_data
 
 def format_character_info(response):
-
     name = response.json()["name"]
 
     # It is possible for the character to be guildless.

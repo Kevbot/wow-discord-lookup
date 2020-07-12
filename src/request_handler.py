@@ -13,7 +13,6 @@ from settings import ID, SECRET
 from io_handler import parse_user_input, get_region_info, get_expansion_info
 
 def get_api_data(message):
-    
     exp_pack, char_name, region, realm = parse_user_input(message.content.split(" "))
     expansion_index = get_expansion_info(exp_pack)
     api_namespace, api_locale, api_region_short = get_region_info(region)
@@ -36,5 +35,4 @@ def get_api_data(message):
     access_url = f'https://{api_region_short}.api.blizzard.com/profile/wow/character/{realm}/{char_name}/encounters/raids?namespace={api_namespace}&locale={api_locale}&access_token={token}'
     exp_response = session.get(access_url)
     exp_response = [exp_response, expansion_index]
-
     return char_response, exp_response
